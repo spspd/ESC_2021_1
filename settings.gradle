@@ -1,0 +1,2 @@
+rootProject.name = "ESC_2021_1"
+include ':app'
