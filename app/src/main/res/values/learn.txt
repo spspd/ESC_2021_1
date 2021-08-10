@@ -1,0 +1,48 @@
+{
+[
+용어 익히기 8.10
+
+Activity : 사용자 인터페이스 화면을 구성하는 컴포넌트
+
+Context : 애플리케이션(객체)의 현재 상태의 맥락
+ 컨텍스트는 생성된 객체에 어떤 일이 일어나고 있는지 알 수 있도록 해줌
+ 액티비티와 애플리케이션에 대한 정보를 얻기 위해서는 컨텍스트를 사용
+
+View : 애플리케이션에서 눈에 가시적으로 표현되는 모든 것
+ 버튼, 텍스트, 레이아웃 등
+]
+
+[
+안드로이드 생명 주기
+ onCreate() : 액티비티가 생성될 때 딱 한번 호출
+ onStart() : 액티비티가 시작할때 호출 /화면이 가려졌다가 다시 보일때 호출
+ onResume() : 액티비티가 화면에 확실히 보일때 호출
+ |
+ Activity running
+ |
+ onPause() : 액티비티가 화면에 살짝 가려지면 호출
+ onStop() : 액티비티가 화면에 완전히 안보일때 호출
+ onDestroy() : 액티비티를 종료하면 호출
+]
+
+[
+리사이클러 뷰 : 한 화면에 표시되기 힘든 많은 수의 데이터를 스크롤 가능한 리스트로 표시해주는 위젯.
+]
+
+}
+
+
+1. 액션바 2개 제거 ( theme 파일 )
+2. Activity - View 설정
+3. id 설정
+ - plain text(검색어를 입력하세요) = search-tv
+ - image bar(십자표시) = add
+ - recycler view = main_recy
+ ================= activity_main.xml 끝 ==============
+4. recy_item xml
+ - text 추가 name,  constract 수정
+ - 글자수 제한 - ems
+ - 줄 제한  - max line
+ -  끝에 말줄임표 - ellipsize
+5. tv - phoneNum
+
